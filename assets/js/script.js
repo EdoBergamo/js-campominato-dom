@@ -12,6 +12,16 @@ function generaBombe(numCelle) {
   }
 }
 
+function mostraBombe() {
+  const celle = document.getElementsByClassName('cella')
+  for (let i = 0; i < celle.length; i++) {
+    const numeroCella = i + 1;
+    if (bombe.includes(numeroCella)) {
+      celle[i].style.backgroundColor = 'red'
+    }
+  }
+}
+
 function scopriCella(numeroCella, cella, numCelle) {
   if (!partitaInCorso) {
     return;
@@ -22,6 +32,7 @@ function scopriCella(numeroCella, cella, numCelle) {
     partitaInCorso = false;
     console.log("Hai calpestato una bomba! Game Over.");
     console.log(`Il tuo punteggio finale è: ${punteggio}`);
+    mostraBombe();
   } else {
     cella.style.backgroundColor = 'lightblue';
     punteggio++;
