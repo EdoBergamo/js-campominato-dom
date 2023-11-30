@@ -1,16 +1,33 @@
-## Esercizio di oggi: **Campo Minato**
-nome repo: `js-campominato-domConsegna`
-Copiamo la griglia fatta ieri nella nuova repo e aggiungiamo la logica del gioco (attenzione: non bisogna copiare tutta la cartella dell'esercizio ma solo l'index.html, e le cartelle js/ css/ con i relativi script e fogli di stile, per evitare problemi con l'inizializzazione di git). (Non dovete ricominciare l'esercizio da capo quindi, prendete quello che avete fatto ieri, copiatelo nella repo di oggi e partite da li a lavorare)
-Il computer deve generare 16 numeri casuali nello stesso range della difficoltà prescelta: le bombe.
-Attenzione: **nella stessa cella può essere posizionata al massimo una bomba, perciò nell’array delle bombe non potranno esserci due numeri uguali.
-In seguito l'utente clicca su una cella: se il numero è presente nella lista dei numeri generati - abbiamo calpestato una bomba - la cella si colora di rosso e la partita termina. Altrimenti la cella cliccata si colora di azzurro e l'utente può continuare a cliccare sulle altre celle.
-La partita termina quando il giocatore clicca su una bomba o quando raggiunge il numero massimo possibile di numeri consentiti (ovvero quando ha rivelato tutte le celle che non sono bombe).Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.BONUS:
-Aggiungere una select accanto al bottone di generazione, che fornisca una scelta tra tre diversi livelli di difficoltà:
+# Campo Minato
 
-    difficoltà 1 ⇒ 100 caselle, con un numero compreso tra 1 e 100, divise in 10 caselle per 10 righe;
-    difficoltà 2 ⇒ 81 caselle, con un numero compreso tra 1 e 81, divise in 9 caselle per 9 righe;
-    difficoltà 3 ⇒ 49 caselle, con un numero compreso tra 1 e 49, divise in 7 caselle per 7 righe;
+## Descrizione dell'esercizio
 
-SUPER-BONUS 1:
-Quando si clicca su una bomba e finisce la partita, evitare che si possa cliccare su altre celle.SUPER-BONUS 1:
-Quando si clicca su una bomba e finisce la partita, il software scopre tutte le bombe nascoste.
+- **Nome repository:** `js-campominato-dom`
+- **Obiettivo:** Implementare il gioco Campo Minato utilizzando JavaScript con il supporto del DOM.
+
+### Istruzioni
+
+- Clonare la griglia realizzata precedentemente nella nuova repository e aggiungere la logica del gioco.
+- Copiare l'`index.html`, le cartelle `js/` e `css/` con i rispettivi script e fogli di stile nella nuova repository.
+
+### Funzionamento del gioco
+
+- Il computer deve generare 16 numeri casuali all'interno dello stesso range della difficoltà prescelta, i quali rappresenteranno le bombe.
+- Non possono essere posizionate più di una bomba nella stessa cella.
+- L'utente clicca su una cella:
+  - Se il numero è presente nella lista delle bombe, la cella si colora di rosso e la partita termina.
+  - Altrimenti, la cella cliccata si colora di azzurro e il gioco continua.
+- La partita termina quando il giocatore clicca su una bomba o quando rivela tutte le celle che non sono bombe.
+- Al termine della partita, il software comunica il punteggio, ovvero il numero di volte in cui l’utente ha cliccato su una cella che non era una bomba.
+
+### Bonus
+
+- Aggiunta di una select accanto al bottone di generazione che consente la scelta tra tre diversi livelli di difficoltà:
+  - Difficoltà 1: 100 caselle (10x10).
+  - Difficoltà 2: 81 caselle (9x9).
+  - Difficoltà 3: 49 caselle (7x7).
+
+### Super Bonus
+
+- Evitare che l'utente possa cliccare su altre celle dopo aver cliccato su una bomba.
+- Quando la partita termina a causa del clic su una bomba, il software mostra tutte le bombe nascoste.
